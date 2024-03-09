@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify – Web Player</title>
+    <link
+      rel="icon"
+      sizes="32x32"
+      type="image/png"
+      href="https://open.spotifycdn.com/cdn/images/favicon32.b64ecc03.png"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utility.css" />
+  </head>
+  <body>
+    <div class="container flex bg-black">
+      <div class="left">
+        <div class="home bg-grey rounded m-1 p-1">
+          <div class="closeLogo">
+            <img width="100px" src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_Green.png" alt="">
+            <i class="bx bx-x"></i>
+          </div>
+          <ul>
+            <li><i class="bx bxs-home"></i>Home</li>
+            <li><i class="bx bx-search"></i>Search</li>
+          </ul>
+        </div>
+        <div class="library bg-grey rounded m-1 p-1">
+          <div class="heading">
+            <ul>
+              <li><i class="bx bx-library"></i>Your Library</li>
+            </ul>
+          </div>
+          <div class="songList">
+            <ul>
+              <!-- <li>
+                            <i class='bx bxs-music'></i>
+                            <div class="info">
+                                <div>Song Name</div>
+                                <div>Song Artist</div>
+                            </div>
+                            <div class="playNow">
+                                <span>Play Now</span>
+                                <i class='bx bx-play-circle'></i>
+                            </div>
+                        </li> -->
+            </ul>
+          </div>
+          <div class="footer">
+            <div>
+              <a href="https://www.spotify.com/in-en/legal/"
+                ><span>Legal</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/in-en/safetyandprivacy/"
+                ><span>Privacy Center</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/in-en/legal/privacy-policy/"
+                ><span>Privacy Policy</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/in-en/legal/cookies-policy/"
+                ><span>Cookies</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"
+                ><span>About</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/in-en/accessibility/"
+                ><span>Accessibility</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right bg-grey rounded">
+        <div class="header">
+          <div class="nav">
+            <i class="bx bx-menu"></i>
+            <i class="bx bx-chevron-left"></i>
+            <i class="bx bx-chevron-right"></i>
+            <img width="80px" class="rightLogo" src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_Green.png" alt="">
+
+          </div>
+          <div class="buttons">
+            <a href="#" class="premium text-decoration link-color link-bold"
+              >Premium</a
+            >
+            <a href="#" class="support text-decoration link-color link-bold"
+              >Support</a
+            >
+            <a href="#" class="download text-decoration link-color link-bold"
+              >Download</a
+            >
+            <a href="#" class="signup link-color link-bold">Sign up</a>
+            <button class="login link-bold">Log in</button>
+          </div>
+        </div>
+        <div class="spotifyPlaylist">
+          <h1>Spotify Playlist</h1>
+          <div class="cardContainer">
+            
+            <div class="playbar">
+              <div class="seekbar">
+                <div class="circle"></div>
+              </div>
+              <div class="upperBar">
+                <div class="songInfo"></div>
+                <div class="songButtons">
+                  <i id="prev" class="bx bx-skip-previous"></i>
+                  <i id="play" class="bx bx-play-circle"></i>
+                  <i id="next" class="bx bx-skip-next"></i>
+                </div>
+                <div class="TimeVol">
+                  <div class="songTime"></div>
+                  <i id="vol" class='bx bxs-volume-full'>
+                  </i>
+                  <div class="range">
+                    <input type="range" name="volume" >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
